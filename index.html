@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="practice.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+
+        <img src="https://p7.hiclipart.com/preview/438/981/272/alien-extraterrestrial-life-logo-sticker-ufo.jpg" 
+            class="logo">
+        <div class="name">
+            TRAVEL PLANNER
+        </div>
+
+    </nav>
+    <div class="row" id="container">
+        <div class="col-lg-6" id="mynetwork">
+        </div>
+
+        <div class="col-lg-6" id="container2">
+            <form name="myForm" id = "myForm"  >
+                <div class="data row m-2">
+                    <div class="col-lg-5">
+                        <label for="start">Choose start location:</label>
+                        <select class= "form-control" id="start" name="start" required>
+                        <option value="1" selected>---</option>
+                        <option value="1" >Delhi</option>
+                        <option value="2">Panaji</option>
+                        <option value="3">Gandhinagar</option>
+                        <option value="4">Shimla</option>
+                        <option value="5">Bengaluru</option>
+                        <option value="6">Thiruvananthapuram</option>
+                        <option value="7">Bhopal</option>
+                        <option value="8">Mumbai</option>
+                        <option value="9">Chandigarh</option>
+                        <option value="10">Jaipur</option>
+                        <option value="11">Chennai</option>
+                        <option value="12">Hyderabad</option>
+                        <option value="13">Lucknow</option>
+                        <option value="14">Dehradun</option>
+                        <option value="15">Kolkata</option>
+                        <option value="16">Patna</option>
+                        <option value="17">Srinagar</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 pl-1">
+                        <i class="fa fa-plane fa-2x p-2 m-2" aria-hidden="true" style="color: green"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <label for="destination">Choose destination:</label>
+                        <select class= "form-control" id="destination" name="destination" required>
+                        <option value="1" selected>---</option>
+                        <option value="1" >Delhi</option>
+                        <option value="2">Panaji</option>
+                        <option value="3">Gandhinagar</option>
+                        <option value="4">Shimla</option>
+                        <option value="5">Bengaluru</option>
+                        <option value="6">Thiruvananthapuram</option>
+                        <option value="7">Bhopal</option>
+                        <option value="8">Mumbai</option>
+                        <option value="9">Chandigarh</option>
+                        <option value="10">Jaipur</option>
+                        <option value="11">Chennai</option>
+                        <option value="12">Hyderabad</option>
+                        <option value="13">Lucknow</option>
+                        <option value="14">Dehradun</option>
+                        <option value="15">Kolkata</option>
+                        <option value="16">Patna</option>
+                        <option value="17">Srinagar</option>
+                        </select>
+                    </div>
+                
+            </div>
+                <button type="button" class="btn btn-success" id="solve">Proceed</button>
+            </form>
+            
+            <span class = "m-2" id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <!-- <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Red link represents bus travel time : <i class="fa fa-bus" aria-hidden="true" style="color: orange"></i><br>
+                Green link represents flight travel time : <i class="fa fa-plane" aria-hidden="true" style="color: green"></i><br>
+                Click on solve to get Solution !!
+            </span> -->
+            <div id="mynetwork2" style="display: none">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">Get New Map</button>
+        <br>
+        
+    </div>
+</body>
+
+</html>
