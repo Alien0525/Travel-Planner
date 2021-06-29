@@ -6,7 +6,6 @@ onload = function () {
     var container2 = document.getElementById('mynetwork2');
     var genNew = document.getElementById('generate-graph');
     var solve = document.getElementById('solve');
-    var temptext = document.getElementById('temptext');
     var temptext2 = document.getElementById('temptext2');
     var start = document.getElementById('start');
     var destination = document.getElementById('destination');
