@@ -58,11 +58,14 @@ form{
     margin: 0 auto;
 }
 
-#generate-graph{
-    margin: 2em auto ;
+.but{
+    margin: 2rem auto ;
     display: grid;
     justify-content: center;
+    align-items: center
 }
+
+
 
 
 #solve{

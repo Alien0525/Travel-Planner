@@ -5,6 +5,7 @@ onload = function () {
     var container = document.getElementById('mynetwork');
     var container2 = document.getElementById('mynetwork2');
     var genNew = document.getElementById('generate-graph');
+    var newLocation = document.getElementById('newLocation');
     var solve = document.getElementById('solve');
     var temptext2 = document.getElementById('temptext2');
     var start = document.getElementById('start');
@@ -111,13 +112,23 @@ onload = function () {
         temptext2.style.display = "inline";
         container2.style.display = "none";
         myForm.style.display = "inline";
+        newLocation.style.display = "none";
     };
 
     solve.onclick = function () {
         temptext2.style.display  = "none";
         container2.style.display = "inline";
         myForm.style.display = "none";
+        newLocation.style.display = "inline";
         network2.setData(solveData(sz));
+    };
+    
+    newLocation.onclick = function () {
+        temptext2.innerText = "Find the least time path from source to destination according to the graph, using Djikstra's Algorithm";
+        temptext2.style.display  = "inline";
+        container2.style.display = "none";
+        myForm.style.display = "inline";
+        newLocation.style.display = "none";
     };
 
     function dijkstra(graph, sz, src) {
