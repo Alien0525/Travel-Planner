@@ -108,7 +108,7 @@ onload = function () {
     genNew.onclick = function () {
         createData();
         network.setData(curr_data);
-        temptext2.innerText = 'Find the least time path from source to destination according to the map';
+        temptext2.innerText = "Find the least time path from source to destination according to the graph, using Djikstra's Algorithm";
         temptext2.style.display = "inline";
         container2.style.display = "none";
         myForm.style.display = "inline";
