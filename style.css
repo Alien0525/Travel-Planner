@@ -59,10 +59,9 @@ form{
 }
 
 .but{
-    margin: 2rem auto ;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    text-align: center;
 }
 
 #solve{
