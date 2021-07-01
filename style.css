@@ -1,7 +1,6 @@
 html,
 body {
     height: 100%;
-    /* overflow-x: hidden; */
 }
 
 .name{
@@ -72,4 +71,11 @@ form{
 #temptext2{
    color: rgb(71, 71, 71);
    font-size: 1.25em !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: scroll; /* Show scrollbars */
+    }
 }
