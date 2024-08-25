@@ -1,1 +1,1 @@
-Hosted on: https://github.com/Alien0525/Travel-Planner
+Hosted on: https://alien0525.github.io/Travel-Planner/
